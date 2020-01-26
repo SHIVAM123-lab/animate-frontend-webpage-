@@ -1,0 +1,481 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<title>Homepage</title>
+	<link rel="icon" href="th.jpg" type="image/png">
+	<link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
+
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
+
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="css/responsive.css" rel="stylesheet" type="text/css">
+	<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+	<link href="css/animate.css" rel="stylesheet" type="text/css">
+
+	<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.js"></script>
+	<script type="text/javascript" src="js/wow.js"></script>
+	<script type="text/javascript" src="js/classie.js"></script>
+	<script type="text/javascript" src="js/magnific-popup.js"></script>
+	<script src="contactform/contactform.js"></script>
+<style>
+body {
+  margin: 100px
+}
+
+.slide-item-wrapper,
+.slide-item-wrapper-up 
+{
+  width: 300px;
+  height: 200px;
+  overflow: hidden; 
+}
+
+.slide-item-wrapper-up 
+{
+margin-left: 250px;
+}
+
+.slide-item-wrapper > *,
+.slide-item-wrapper-up > *
+{
+  transition: 2s ease-in-out;
+}
+
+.box-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:white;
+  color: black;
+  width: 300px;
+  height: 200px;
+  margin-bottom: 20px;
+  box-shawdow:0 4px 8px 0 rgba(0,0,0,2);
+}
+
+.animate
+{
+	opacity: 0;
+}
+.footer {
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  text-align: center;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:red;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.yup{
+box-shadow:0 4px 8px 0 rgba(0,0,0,3);
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#div1{
+height:110px;
+width:1500px;
+
+opacity:0.5;
+display:flex;
+position:fixed;
+
+}
+.div11{
+padding-top:40px;
+height:90px;
+width:200px;
+color:white;
+cursor:pointer;
+border:1px solid black;
+
+
+}
+.p1{
+font-size:30px;
+color:black;
+}
+#div2{
+padding-left:100px;
+display:flex;
+
+display:inline-block;
+}
+
+#div3{
+margin-bottom:10px;
+height:4px;
+background:green;
+
+display:inline-block;
+width:0px;
+}
+#div4{
+margin-bottom:10px;
+height:4px;
+background:green;
+display:inline-block;
+width:0px;
+}
+#div5{
+margin-bottom:10px;
+height:4px;
+background:green;
+
+display:inline-block;
+width:0px;
+}
+#div6{
+margin-bottom:10px;
+height:4px;
+background:green;
+
+display:inline-block;
+width:0px;
+}
+
+</style>
+</head>
+
+<body>
+	<header class="header" id="header" >
+		<!--header-start-->
+		<div class="container">
+			<figure class="logo animated fadeInDown delay-07s">
+				<a href="#"><img src="th.jpg" alt="" ></a>
+			</figure>
+			<h1 class="animated fadeInDown delay-07s">welcome to fitness center</h1>
+			<ul class="we-create animated fadeInUp delay-1s">
+				<li>we motivate people to get fit </li>
+			</ul>
+			<a class="link animated fadeInUp delay-1s servicelink" href="#row">Get Started</a>
+		</div>
+	</header>
+	<!--header-end-->
+
+
+
+<nav class="main-nav-outer" id="test">
+		<!--main-nav-start-->
+		<div class="container">
+			<ul class="main-nav">
+			<li><div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ 
+</li>
+				<li><a href="#header" >Home</a></li>
+				<li><a href="web3.html" >FOOD</a></li>
+	
+						
+			<li><a href="#Portfolio" >BMI</a></li>
+				<li><a href="#client">DIET CHART</a></li>
+				<li><a href="#feedback">FEEDBACK</a></li>
+				
+			</ul>
+			<a class="res-nav_click" href="#"><i class="fa fa-bars"></i></a>
+		</div>
+	</nav>
+	<div class="row" id="row">
+<div class="col-sm-6">
+     <div class="slower box-item animate --fadeInLeft">
+      Ben Greenfield is the owner and brain behind Ben Greenfield Fitness, a website full of useful health advice and workout tips. He approaches fitness from a scientific orientation with an holistic eye, simultaneously promoting safe and healthy exercise while debunking common and dangerous myths.
+    </div>
+</div>
+<div class="col-sm-6">
+<div class="slower box-item animate --fadeInRight">
+      <img src="2.jpg" class="img-thumbnail img-rounded yup">
+    </div>
+</div>
+</div>
+<br>
+<br>
+<div class="row">
+<div class="col-sm-6">
+     <div class="slower box-item animate --fadeInLeft">
+      Who says nerds have to be thin, lanky, and unhealthy? The basement-dwelling stereotype has long been invalidated and Steve Kamb is a shining example of that truth. With his website, Nerd Fitness, he’s made it his mission to help fellow nerds and couch potatoes to take control of their lives and overcome their health issues.
+    </div>
+</div>
+<div class="col-sm-6">
+     <div class="slower box-item animate --fadeInDown">
+      <img src="5.jpg" class="img-thumbnail img-rounded yup">
+    </div>
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+     <div class="slower box-item animate --fadeInLeft">
+      Fitness doesn’t have to be all about “maximizing gains,” “optimizing performance,” and “breaking records.” Fitness doesn’t require a gym membership or expensive home equipment. Using nothing more than your body, Zuzka Light will teach you how to burn fat, eat healthy, and be happy.
+    </div>
+</div>
+<div class="col-sm-6">
+     <div class="slower box-item animate --fadeInUp">
+      <img src="4.jpg" class="img-thumbnail img-rounded yup">
+    </div>
+  </div>
+</div>
+</div>
+
+
+	<!--main-nav-end-->
+	<div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s" id="feedback">
+					<div class="form">
+
+						<div id="sendmessage">Your message has been sent. Thank you!</div>
+						<div id="errormessage"></div>
+						<form action="" method="post" role="form" class="contactForm">
+							<div class="form-group">
+								<input type="text" name="name" class="form-control input-text" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+								<div class="validation"></div>
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control input-text" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+								<div class="validation"></div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+								<div class="validation"></div>
+							</div>
+							<div class="form-group">
+								<textarea class="form-control input-text text-area" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+								<div class="validation"></div>
+							</div>
+
+							<div class="text-center"><button type="submit" class="input-btn">Send FEEDBACK</button></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	
+
+
+	<script type="text/javascript">
+		$(document).ready(function(e) {
+
+			$('#test').scrollToFixed();
+			$('.res-nav_click').click(function() {
+				$('.main-nav').slideToggle();
+				return false
+
+			});
+
+      $('.Portfolio-box').magnificPopup({
+        delegate: 'a',
+        type: 'image'
+      });
+
+		});
+	</script>
+
+	<script>
+		wow = new WOW({
+			animateClass: 'animated',
+			offset: 100
+		});
+		wow.init();
+	</script>
+
+
+	<script type="text/javascript">
+		$(window).load(function() {
+
+			$('.main-nav li a, .servicelink').bind('click', function(event) {
+				var $anchor = $(this);
+
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top - 102
+				}, 1500, 'easeInOutExpo');
+				/*
+				if you don't want to use the easing effects:
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top
+				}, 1000);
+				*/
+				if ($(window).width() < 768) {
+					$('.main-nav').hide();
+				}
+				event.preventDefault();
+			});
+		})
+	</script>
+
+	<script type="text/javascript">
+	
+	var win = jQuery(window);
+	var slideUpMods = jQuery('.animate');
+	
+	function IsElementVisible (element, partial)
+	{
+		var jQueryt           = jQuery(element),
+			jQueryw       = jQuery(window),
+			viewTop       = jQueryw.scrollTop(),
+			viewBottom    = viewTop + jQueryw.height(),
+			_top          = jQueryt.offset().top,
+			_bottom       = _top + jQueryt.height(),
+			compareTop    = partial === true ? _bottom : _top,
+			compareBottom = partial === true ? _top : _bottom;
+    
+		return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+	}
+	
+	function runAnimations()
+	{
+		var isMobile = window.innerWidth < 768;		
+		
+		slideUpMods = jQuery('.animate');
+		
+  		slideUpMods.each(function(i, el) 
+		{
+			var el = jQuery(el);
+			
+			if (isMobile)
+			{
+				el.css('opacity', '1.0');
+			}
+			else
+			{						
+				if (IsElementVisible(el, false))
+				{
+					var classNames = el.attr("class").split(' ');
+					
+					for (var i = 0; i < classNames.length ; i++)
+					{
+						var clName = classNames[i];
+						if (clName.startsWith('--'))
+						{
+							el.removeClass(clName);
+							el.removeClass('animate');
+							clName = clName.replace('--', '');
+							el.addClass('animated'); 
+							el.addClass(clName); 
+						}
+					};
+				} 
+			}
+		})
+	}
+	
+	runAnimations();
+
+    win.scroll(function(event) 
+	{  
+		runAnimations();
+  	});
+		$(window).load(function() {
+
+
+			var $container = $('.portfolioContainer'),
+				$body = $('body'),
+				colW = 375,
+				columns = null;
+
+
+			$container.isotope({
+				// disable window resizing
+				resizable: true,
+				masonry: {
+					columnWidth: colW
+				}
+			});
+
+			$(window).smartresize(function() {
+				// check if columns has changed
+				var currentColumns = Math.floor(($body.width() - 30) / colW);
+				if (currentColumns !== columns) {
+					// set new column count
+					columns = currentColumns;
+					// apply width to container manually, then trigger relayout
+					$container.width(columns * colW)
+						.isotope('reLayout');
+				}
+
+			}).smartresize(); // trigger resize to set container width
+			$('.portfolioFilter a').click(function() {
+				$('.portfolioFilter .current').removeClass('current');
+				$(this).addClass('current');
+
+				var selector = $(this).attr('data-filter');
+				$container.isotope({
+
+					filter: selector,
+				});
+				return false;
+			});
+
+		});
+		function line(id){
+id.style.width="150px";
+id.style.transition="1s";
+
+
+
+}
+function line1(id){
+id.style.width="0px";
+id.style.transition="1s";
+
+
+
+}
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+	</script>
+
+</body>
+
+</html>

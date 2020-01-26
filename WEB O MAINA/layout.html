@@ -1,0 +1,47 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$document.ready(function(){
+$("body").click(function(){
+ 
+$("#img").slideDown(1000);
+});
+
+
+});
+</script>
+<style>
+.d1{
+width:1300px;
+height:500px;
+border:1px solid black;
+display:flex;
+}
+.d2{
+width:500px;
+height:500px;
+border:1px solid black;
+flex:1px;
+}
+#img{
+display:none;
+}
+</style>
+</head>
+<body>
+<div class="d1">
+<div class="d2">
+</div>
+<div class="d2">
+<img src="macbook-pro.png" alt="mackbook" id="img" >
+</div>
+</div>
+</body>
+<script>
+function func(){
+var img=document.getElementById("img");
+img.style.display="block";
+}
+</script
+</html>

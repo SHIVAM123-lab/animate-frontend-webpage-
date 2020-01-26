@@ -1,0 +1,174 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#div1{
+height:110px;
+width:1500px;
+
+opacity:0.5;
+display:flex;
+position:fixed;
+
+}
+.div11{
+padding-top:40px;
+height:90px;
+width:200px;
+color:white;
+cursor:pointer;
+border:1px solid black;
+
+
+}
+.p1{
+font-size:30px;
+color:black;
+}
+#div2{
+padding-left:100px;
+display:flex;
+}
+
+#div3{
+margin-bottom:10px;
+height:4px;
+background:green;
+
+width:0px;
+}
+#div4{
+margin-bottom:10px;
+height:4px;
+background:green;
+
+width:0px;
+}
+#div5{
+margin-bottom:10px;
+height:4px;
+background:green;
+
+width:0px;
+}
+#div6{
+margin-bottom:10px;
+height:4px;
+background:green;
+
+width:0px;
+}
+
+</style>
+</head>
+<body>
+
+<div id="div1">
+<div id="div2">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<p style="font-size:30px;cursor:pointer" onclick="openNav()">claa</p>
+
+
+<div class="div11">
+
+<a  href="two.html" class="p1" onmouseover="line(div3)" onmouseout="line1(div3)">home</a>
+<div id="div3"  >
+
+</div>
+</div>
+<div class="div11">
+<a class="p1" onmouseover="line(div4)" onmouseout="line1(div4)">about</a>
+<div id="div4"  >
+
+</div>
+</div>
+<div class="div11">
+<a class="p1" onmouseover="line(div5)" onmouseout="line1(div5)">render</a>
+<div id="div5"  >
+1
+</div>
+</div>
+<div class="div11">
+<a class="p1" onmouseover="line(div6)" onmouseout="line1(div6)">yo</a>
+<div id="div6"  >
+
+</div>
+</div>
+
+</div>
+</div>
+<script>
+function line(id){
+id.style.width="150px";
+id.style.transition="1s";
+
+
+
+}
+function line1(id){
+id.style.width="0px";
+id.style.transition="1s";
+
+
+
+}
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</body>
+</html>
